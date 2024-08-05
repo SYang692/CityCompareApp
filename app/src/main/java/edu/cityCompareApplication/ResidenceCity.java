@@ -67,4 +67,5 @@ public class ResidenceCity extends AppCompatActivity {
     public void cancelClickHandler(View view) {
         startActivity(new Intent(ResidenceCity.this, MainActivity.class));
     }
+
 }
