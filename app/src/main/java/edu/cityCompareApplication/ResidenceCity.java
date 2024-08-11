@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class ResidenceCity extends AppCompatActivity {
 
     private EditText currentCityName, currentCityCost, currentCityWeather,currentCitySalary;
@@ -18,6 +19,7 @@ public class ResidenceCity extends AppCompatActivity {
         setContentView(R.layout.activity_residence_city);
 
         curCity = DataStorage.getCurCity();
+
 
         currentCityName = (EditText) findViewById(R.id.currentCityName);
         currentCityCost = (EditText) findViewById(R.id.currentCityCost);

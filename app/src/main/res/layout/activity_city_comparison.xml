@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".CityComparison">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="City Comparison"
+            android:textColor="#F28968"
+            android:textSize="50dp"
+            android:layout_marginTop="50dp"/>
+
+        <TableLayout
+            android:id="@+id/mainTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true">
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/mybutton"
+                android:onClick="compareCityClcikHandler"
+                android:padding="15dp"
+                android:text="Compare"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/mybutton"
+                android:onClick="cancelClickHandler"
+                android:padding="15dp"
+                android:text="Cancel"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,6 +45,7 @@ public class AnotherCity extends AppCompatActivity {
             Cities.add(newCity);
             DataStorage.setCities(Cities);
             Toast.makeText(AnotherCity.this, "Successfully saved city to list", Toast.LENGTH_SHORT).show();
+            reset();
         }
         catch (Exception e){
             if(e.getMessage().contains("Name")){
@@ -66,12 +67,17 @@ public class AnotherCity extends AppCompatActivity {
         startActivity(new Intent(AnotherCity.this, MainActivity.class));
     }
 
-    public void addAnotherCityClickHandle(View view) {
+    public void reset(){
 
         currentCityName.setText("");
         currentCityCost.setText("");
         currentCitySalary.setText("");
         currentCityWeather.setText("");
+
+    }
+
+    public void addAnotherCityClickHandle(View view) {
+        reset();
 //        newCity = null;
 
     }
